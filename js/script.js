@@ -10,7 +10,7 @@
       Object.keys(data).forEach(function(item) {
         var url = data[item];
         var div$ = $('<div class="animated fadeIn"><div><span class="label label-' + (item === 'rss' ? 'warning' : 'info') + '">' + item +  '</span></div>&nbsp;'
-          + '<a target="_blank" href="' + url + '">' + url + '</a>'
+        + '<a target="_blank" href="' + url + '">' + url + '</a>'
         + '</div>');
         urls$.append(div$);
       });
@@ -31,8 +31,8 @@
     if (!type) return;
 
     return {
-      rss: 'http://playparser-inmycloud.rhcloud.com/rss/' + type + '?id=' + id,
-      json: 'http://playparser-inmycloud.rhcloud.com/json/' + type + '?id=' + id
+      rss: 'http://api.viewreview.org/rss/' + type + '?id=' + id,
+      json: 'http://api.viewreview.org/json/' + type + '?id=' + id
     }
   }
 })();
